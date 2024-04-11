@@ -21,7 +21,6 @@ class Kimi(LLM):
         try:
 
             client = OpenAI(
-                # 此处请替换自己的api
                 api_key=os.getenv("KIMI_API_KEY"),
                 base_url="https://api.moonshot.cn/v1",
             )
